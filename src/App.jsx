@@ -2,7 +2,7 @@ import{BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom
 import Home from "./pages/Home";
 import AddForm from "./pages/AddForm";
 import NoteDetails from "./pages/NoteDetails";
-import EditFrom from "./pages/EditFrom";
+import EditFrom from "./pages/EditForm";
 import Login from "./pages/login";
 import Signup from "./pages/signup";
 import Head from "./components/Head";
