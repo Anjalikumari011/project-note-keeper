@@ -1,6 +1,6 @@
 import{ useState } from "react"; //React hook to manage component-level state.
 import api from "../services/api";  //Custom Axios instance that sends requests to your backend with proper configuration (like base URL and token).
-import { useNavigation, link } from "react-router-dom";   //useNavigate: Navigate to another route programmatically. //Link: Component to navigate between routes (client-side routing).
+import { useNavigation, Link } from "react-router-dom";   //useNavigate: Navigate to another route programmatically. //Link: Component to navigate between routes (client-side routing).
 
 import IconButton from "@mui/material/IconButton";
 import Visibility from "@mui/icons-material/Visibility";
