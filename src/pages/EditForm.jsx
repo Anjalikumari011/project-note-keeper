@@ -1,4 +1,4 @@
-import{ useNaviagte,useParams} from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useState, useEffect} from "react";
 import Swal from "sweetalert2";
 import api from "../services/api";
