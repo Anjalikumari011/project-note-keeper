@@ -1,6 +1,6 @@
 import{ useState } from "react"; //React hook to manage component-level state.
 import api from "../services/api";  //Custom Axios instance that sends requests to your backend with proper configuration (like base URL and token).
-import { useNavigation, Link } from "react-router-dom";   //useNavigate: Navigate to another route programmatically. //Link: Component to navigate between routes (client-side routing).
+import { useNavigate, Link } from "react-router-dom";   //useNavigate: Navigate to another route programmatically. //Link: Component to navigate between routes (client-side routing).
 
 import IconButton from "@mui/material/IconButton";
 import Visibility from "@mui/icons-material/Visibility";
@@ -11,7 +11,7 @@ export default function Signup(){
     const [from, setForm] = useState({ email:"", password:""});
     const [error, setError] =useState("");
     const [showPassword, setshowPasswod] = useState(false);
-    const navigate = useNavigation();
+    const navigate = useNavigate();
 
     const validatePassword = (password)=> {
         if (password.length<8){
@@ -61,7 +61,7 @@ export default function Signup(){
     };
 
     return (
-        <div className="min-h-screen bg-gradiant-to-br form-indigo-600 via-purple-500 to-pink-500 flex items-center justify-center px-4">
+        <div className="min-h-screen bg-gradient-to-br from-indigo-600 via-purple-500 to-pink-500 flex items-center justify-center px-4">
             {/* Full-screen gradient background with center alignment.*/}
             <div className="w-full max-w-md bg-white/20 backdrop-blur-md border border-white/30 rounded-2xl shadow-2xl p-10 space-y-6">
                 {/* Signup form box with blur, rounded corners, and shadow. */}
