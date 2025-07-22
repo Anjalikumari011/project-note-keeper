@@ -8,7 +8,7 @@ import VisibilityOff from "@mui/icons-material/VisibilityOff";
 //MUI icons and button to show/hide password toggle.
 
 export default function Signup(){
-    const [from, setForm] = useState({ email:"", password:""});
+    const [form, setForm] = useState({ email:"", password:""});
     const [error, setError] =useState("");
     const [showPassword, setshowPasswod] = useState(false);
     const navigate = useNavigate();
