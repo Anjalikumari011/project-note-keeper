@@ -125,9 +125,9 @@ export default function Signup(){
                 </form>
                 <p className="text-center text-white/80 text-sm">
                 Already have an account?{" "}
-                <link to="/login" className="text-white font-semibold hover:underline">
+                <Link to="/login" className="text-white font-semibold hover:underline">
                 login
-                </link>
+                </Link>
                 </p>
              </div>
         </div>
