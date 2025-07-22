@@ -7,7 +7,7 @@ export default function DetailCard({note}){
     const navigate= useNavigate();
     
     const deleteNote=()=>{
-        swal.fire({
+        Swal.fire({
             title:"Are you sure?",
             Text:"You won't be able to revent this!",
             icon:"warning",
@@ -17,7 +17,7 @@ export default function DetailCard({note}){
         }).then((result)=>{
             if(result.isConfirmed){
                 api
-                .delete(`/dashboard/${note?._id}`)
+                .delete(`/deleteNote/${note?._id}`)
                 .then(()=>{
                     navigate("/dashboard");
                     Swal.fire("Deleted!", "Your note has been deleted.", "success");
@@ -28,7 +28,7 @@ export default function DetailCard({note}){
     };
 
     return(
-        <div className="max-w-3xl mx-auto mt-10 bg-white/90 shadow-xl rounder-2xl p-8 space-y-6">
+        <div className="max-w-3xl mx-auto mt-10 bg-white/90 shadow-xl rounded-2xl p-8 space-y-6">
             <h1 className="text-3xl font-bold text-indigo-700">{note.title}</h1>
             <p className="text-gray-700 text-lg whitespace-pre-wrap">{note.details} </p>
             <div className="flex justify-end gap-4 pt-4 border-t border-gray-200">
