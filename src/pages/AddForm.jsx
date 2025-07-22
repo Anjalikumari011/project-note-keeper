@@ -28,7 +28,7 @@ export default function AddForm(){
                         popup:'animate__animated animate__fadeInDown'
                     },
                     hideClass:{
-                        popup:'animate__animated animate__fadeOutUP'
+                        popup:'animate__animated animate__fadeOutUp'
                     }
                 });
             })
