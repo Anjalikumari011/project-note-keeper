@@ -24,7 +24,7 @@ export default function EditForm(){
         setNote({...note,[note]:value});
     };
 
-    const navigate= useNaviagte();
+    const navigate= useNavigate();
 
     const submitHandler=(event)=>{
         event.preventDefault();
